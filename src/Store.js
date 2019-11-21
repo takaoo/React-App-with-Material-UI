@@ -55,7 +55,7 @@ function addTopicAction(value) {
 
 function Store(props) {
     const [allChats, dispatch] = React.useReducer(reducer, initState);
-    const [state, setstate] = useState("")
+    const [state, setstate] = useState("Now Connecting Soket.io...")
 
     if (!socket) {
         socket = io(':3001');
